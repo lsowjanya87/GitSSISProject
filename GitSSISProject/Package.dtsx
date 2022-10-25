@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{ECB523A0-995B-4DD5-8D7D-48D40D2904B0}">
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{46CAEC78-B5DB-419E-BD9E-8B10CC359DBB}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:Variables>
@@ -38,6 +38,18 @@
       DTS:ObjectName="Covid_data_sequence_processor">
       <DTS:Variables />
       <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Covid_data_sequence_processor\Bulk Insert Task"
+          DTS:CreationName="Microsoft.BulkInsertTask"
+          DTS:Description="Bulk Insert Task"
+          DTS:DTSID="{E29CFCF1-5E00-40AC-ACF7-F2EA84754180}"
+          DTS:ExecutableType="Microsoft.BulkInsertTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Bulk Insert Task"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData />
+        </DTS:Executable>
         <DTS:Executable
           DTS:refId="Package\Covid_data_sequence_processor\Data Flow Task"
           DTS:CreationName="Microsoft.Pipeline"
@@ -98,11 +110,15 @@
           Size="150.4,41.6"
           Id="Package\Covid_data_sequence_processor\Data Flow Task"
           TopLeft="74.8666582557894,15.5333341942893" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Covid_data_sequence_processor\Bulk Insert Task"
+          TopLeft="271.533317107625,33.7333343389299" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="335.2,112"
-          Size="335.2,155.2"
+          PanelSize="429.6,130.4"
+          Size="429.6,173.6"
           Id="Package\Covid_data_sequence_processor"
           TopLeft="136.666661236021,49.4000003925959" />
       </GraphLayout>
